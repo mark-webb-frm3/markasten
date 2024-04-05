@@ -1,4 +1,4 @@
-FROM golang:1.19
+FROM golang:1.22.1
 WORKDIR markasten
 COPY ./ ./
 RUN go build -o markasten ./cmd/markasten/main.go && mv markasten /usr/local/bin
